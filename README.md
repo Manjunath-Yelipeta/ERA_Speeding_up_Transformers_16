@@ -62,26 +62,25 @@ def collate_b(pad_token, b):
 
 In this function:
 
-We compute the maximum sequence length within the batch of data to ensure consistent padding.
-We pad the input sequences (encoder_input, decoder_input, and label) with the pad_token to match the maximum sequence length.
-We create masks (encoder_mask and decoder_mask) to handle padding elements during model training.
-We gather source and target texts for reference.
-Finally, the function returns a dictionary containing batched tensors and masks, making it ready for use with the Transformer model.
-This custom collate function helps optimize data preprocessing and ensures efficient batch handling during training.
+- We compute the maximum sequence length within the batch of data to ensure consistent padding.
+- We pad the input sequences (`encoder_input`, `decoder_input`, and `label`) with the `pad_token` to match the maximum sequence length.
+- We create masks (`encoder_mask` and `decoder_mask`) to handle padding elements during model training.
+- We gather source and target texts for reference.
+- Finally, the function returns a dictionary containing batched tensors and masks, making it ready for use with the Transformer model. This custom collate function helps optimize data preprocessing and ensures efficient batch handling during training.
 
-Usage
-Provide instructions on how to use your optimized Transformer model and dataset. Include code examples and guidelines for running experiments.
+## Usage
 
-Contributing
-Explain how others can contribute to your project, including guidelines for submitting pull requests or reporting issues. Encourage community involvement in improving the project's efficiency.
+To run and further explore:
+```bash
+python main.py
 
-License
-Specify the license under which your project is distributed.
+## License
+I have used Apache 2.0 for this task. 
 
-Acknowledgments
-If you'd like to acknowledge any individuals or projects that inspired or contributed to your work, you can include an acknowledgments section.
+## Acknowledgments
+I would  like to acknowledge Rohan Shravan and students of the school of AI for their valuable guidance.
 
-Feel free to customize this README further, adding more details, installation instructions, or any other relevant information based on your project's specific needs.
+
 
 
 
