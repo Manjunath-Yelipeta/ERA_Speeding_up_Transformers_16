@@ -68,16 +68,16 @@ In this function:
 - We gather source and target texts for reference.
 - Finally, the function returns a dictionary containing batched tensors and masks, making it ready for use with the Transformer model. This custom collate function helps optimize data preprocessing and ensures efficient batch handling during training.
 
-##   Usage
+##  Usage
 
 To run and further explore:
 ```bash
 python main.py
 
-##   License
+###  License
 I have used Apache 2.0 for this task. 
 
-##   Acknowledgments
+###   Acknowledgments
 I would  like to acknowledge Rohan Shravan and students of the school of AI for their valuable guidance.
 
 
